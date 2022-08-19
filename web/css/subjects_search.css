@@ -1,0 +1,69 @@
+.container{
+	width: 70%;
+	margin: auto;
+}
+.boder{
+	border: 1px solid #99CCFF;
+}
+.format{
+	text-align: center;
+}
+.subformat{
+	display: flex;
+	width: 60%;
+	margin-left: 300px;
+} 
+.lab{
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	min-width: 100px;
+}
+.color{
+	border: 1px solid #0078ED;
+	background-color: #99CCFF;
+}
+.lab > input{
+	padding: 10px 0px;
+    min-width: 300px;
+    border: 1px solid #99CCFF;
+	box-sizing: border-box;
+}
+.lab > button{
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #0078ED;
+	background-color: #99CCFF;
+	margin-bottom: 10px;
+	margin-left: 200px;
+	cursor: pointer;
+}
+.lab > select{
+	padding: 10px 0px;
+    min-width: 300px;
+    border: 1px solid #99CCFF;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.tableinfo{
+	display: flex;
+	width: 60%;
+	margin-left: 200px;
+	margin-bottom: 20px;
+}
+table{
+    margin-top: 30px;
+    border:1px solid #0078ED;
+}
+th {
+    background-color: #99CCFF;
+    
+}
+th,td{
+    border-right: 1px solid #0078ED;
+    padding: 5px 10px;
+}
+tr{
+    border-bottom: 1px solid #0078ED;
+}

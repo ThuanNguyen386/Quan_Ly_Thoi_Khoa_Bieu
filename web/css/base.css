@@ -1,0 +1,129 @@
+/* reset CSS */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+    
+}
+html{
+    box-sizing: border-box;
+
+}
+:root{
+    --color-background: rgb(157, 173, 247);
+    --color-border: rgb(94, 130, 228);
+    --color-error: #D8000C;
+    --background-color-error: #FFD2D2;
+    --color-info: #00529B;
+    --background-color-info:#BDE5F8;
+    --color-success: #4F8A10;
+    --background-color-success:#DFF2BF;
+    --color-text:#fff;
+    --background-color-info2:#000;
+    --color-warn: #9F6000;
+    --background-color-warn: #FEEFB3;
+}
+
+.timetable{
+    position: relative;
+    top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    
+}
+.form{
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--background-color-info);
+    
+}
+.main{
+    width: 900px;
+}
+.element{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.element label{
+    width: 120px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px var(--background-color-info2);
+    background-color: var(--background-color-success);
+}
+.select-element,
+.option-element,
+.input-element,
+#description{
+    padding: 8px 12px;
+    width: 420px;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    outline: none;
+}
+.input-show{
+    outline: none;
+    border: none;
+}
+#list_lesson{
+    display: flex;
+    /* justify-content: space-evenly; */
+    list-style: none;
+    width: 420px;
+    flex-wrap: wrap;
+}
+#list_lesson .item_lesson{
+    display: flex;
+    width: 72px;
+    align-items: center;
+    margin-bottom: 4px;
+    margin-right: 12px;
+    
+}
+#list_lesson .item_lesson input{
+    margin-right: 6px;
+}
+.btn-submit{
+    padding: 8px 12px;
+    background-color: var(--background-color-success);
+    border-radius: 3px;
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    color: var(--background-color-info2);
+    text-align: center;
+    box-shadow: 0 0 2px var(--color-info);
+}
+
+.btn-remove{
+    background-color: var(--background-color-error);
+}
+.btn-change{
+    background-color: var(--background-color-warn);
+}
+.btn-submit:hover{
+    cursor: pointer;
+    color: var(--color-text);
+    background-color: var(--background-color-info2);
+}
+
+th,td{
+    text-align: center;
+    min-width: 120px;
+}
+.message-error{
+    color: var(--color-error);
+}
+.message-success{
+    color: var(--color-success);
+}
+

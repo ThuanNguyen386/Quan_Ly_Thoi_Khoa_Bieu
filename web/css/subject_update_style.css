@@ -1,0 +1,330 @@
+:root {
+    --colorBorder: rgba(18, 58, 133, 0.678);
+    /* --colorBorder: rgb(8, 28, 202); */
+    --borderWeight: 1pt; 
+    --colorBackGND: rgb(128, 186, 223);
+    /* --colorBackGND: rgb(28, 3, 247); */
+    --colorText: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pad {
+    padding: 10px;
+    margin: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.pad-right {
+    padding-right: 25%;
+}
+
+.border {
+    border: solid var(--borderWeight) var(--colorBorder);  
+}
+
+.txt-area {
+    height:100px;
+    text-align: left !important;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border {
+    /* border-color: rgb(0, 69, 197); */
+    border: solid var(--borderWeight) var(--colorBorder);
+    
+}
+
+.mrg {
+    margin: 0 7px;
+    margin-right: -7px;
+}
+
+.mrg-top {
+    margin-top: 6px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container {
+    padding: 30px 50px;
+    margin: 0px 100px;
+}
+
+#container-complete {
+    padding: 3% 3%;
+    margin: 0 30%;
+    position: absolute;
+}
+
+#content select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.507), rgba(255, 255, 255, 0.473)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Blue_triangle.svg/1152px-Blue_triangle.svg.png');
+    background-position: 100% 50%;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+}
+
+#messages {
+    color: red;
+}
+
+#messages .mess {
+    padding: 5px 3%;
+    border-color: orange;
+    margin-bottom: 2px;
+}
+
+.select#school_year {
+    cursor: pointer;
+}
+
+input[type=text],input[type=button], label.label-ctn
+select, textarea {
+    width: 100%;
+    padding: 12px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 4px; */
+    /* resize: vertical; */
+}
+
+.re-position {
+    position: relative;
+}
+
+.fixed {
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#browser-text label {
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+input[type=submit] {
+    background-color: var(--colorBorder);
+    color: white;
+    padding: 20px 60px;
+    border: solid var(--borderWeight) var(--colorBorder);
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:auto;
+    display:block;
+}
+
+input[type=file]:hover, input[type=submit]:hover {
+    background-color: var(--colorBackGND);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.avt-area {
+    height: 150px;
+    width: 150px;
+    object-fit: fill;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-25 input[type=submit]{
+    padding: 14px 30px;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin:auto;
+    display:block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper input[type=submit]{
+    float: right;
+    /* margin-right: 25px; */
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapp2 input[type=submit]{
+    float: left;
+    margin-left: 25px;
+
+}
+
+#messages .mess {
+    padding: 5px 3%;
+    border-color: orange;
+    margin-bottom: 2px;
+}
+
+.homepage {
+    /* margin-right: 60px; */
+    /* padding-right: 40px; */
+    margin-bottom: 100px;
+}
+
+.homepage a {
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.brs {
+    justify-content: center;
+    text-align: center;
+}
+
+.brs-btn {
+    background-color: var(--colorBorder);
+    color: white;
+}
+
+.file-input {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    margin-top: 6px;
+    padding-right: 33%;
+}
+
+.file-input input[type=file]{
+    opacity: 0;
+}
+
+.btn-file input::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+input[type=file]{
+    width: 100%;
+    height: 100%;
+}
+
+/* Popup container */
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(243, 243, 215);
+    color: red;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 13px;
+}
+  
+  /* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(212, 212, 183) transparent transparent transparent;
+}
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+  
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.popup.pop-txt {
+    margin-left: 66%;
+}
+
+.popup.pop-area {
+    margin-left: 95%;
+
+}
+
+.popup.pop-brs {
+    margin-left: 58%;
+}
+
+/* confirm */
+label#subject, label#school_year {
+    width: 100%;
+    height: 100%;
+    padding: 11px 12px 11px 12px;
+}
+
+label.txt-area {
+    width: 100%;
+    padding: 11px 12px 11px 12px;
+}
